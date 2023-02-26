@@ -1,0 +1,156 @@
+
+//ISR(ADC_vector)
+//{
+	//
+		////if (adc > 49 )
+		////{
+			//LCD_F_Go_To(0,0);
+			//LCD_F_Write_String("             ");
+			//LCD_F_Go_To(0,0);
+			//LCD_F_Write_String("ADC is on");
+			//Motor_F_ON();
+			//_delay_ms(500);
+			//LCD_F_Go_To(0,0);
+			//LCD_F_Write_String("              ");
+		////}
+		////else
+		////{
+			////LCD_F_Go_To(0,0);
+			////LCD_F_Write_String("             ");
+			////LCD_F_Go_To(0,0);
+			////LCD_F_Write_String("ADC is off");
+			////Motor_F_OFF();
+			////_delay_ms(500);
+			////LCD_F_Go_To(0,0);
+			////LCD_F_Write_String("              ");
+		////}
+		//
+	//
+//
+//
+//}
+	//
+				
+					
+			
+	//ISR(EXTI0_vector)
+	//{
+		 	//U8_t i=0;
+		 	//while(i<5)
+		 	//{
+			 	//SET_BIT(PORTC, 2);
+			 	//_delay_ms(1000);
+			 	//CLR_BIT(PORTC, 2);
+			 	//_delay_ms(1000);
+			 	//i++;
+		 	//}
+//
+//
+	//}
+	
+	 //ISR(EXTI0_vector)
+	 //{
+		 //LCD_F_Go_To(0, 0);
+		 //LCD_F_Write_Number(ADCL | ADCH<<8);
+		 //LCD_F_Write_String("       ");
+		 //SET_BIT(ADCSRA, 6);
+	 //}
+	
+	
+	
+	
+	
+	
+	
+	
+	//x=ADC_F_Read();
+	//LCD_F_Write_Number(ADC_F_Read());
+
+	
+	//while (1) 
+    //{
+//
+		//LCD_F_Write_command(0Xc4);
+		//x=ADC_F_Read();
+		//LCD_F_Write_Number(x);
+		//_delay_ms(1);
+		//LCD_F_Write_command(0Xc4);
+//
+		//
+		//if (x == 500)
+		//{
+			//
+			//DIO_F_Set_Pin_Val(GA,PIN3,HIGH);
+			//DIO_F_Set_Pin_Val(GC,PIN2,HIGH);
+			//_delay_ms(50);
+			//DIO_F_Set_Pin_Val(GC,PIN2,LOW);
+//
+		//}
+		//
+		//
+		//
+		//
+	//}
+		
+    
+//}
+
+
+//////////////////////////////////
+//LCD_keypad////
+//U8_t key;
+//U8_t arr[10],i=0,sum=0;
+//S8_t j;
+//U8_t F=0 , FS=0;
+//KPAD_F_Init();
+//LCD_F_init();
+//key = KPAD_F_Get_Key();
+//if(key != 'N')
+//{
+//LCD_F_Write_Data(key);
+//arr[i]=key;
+//
+//if (key == '=')
+//{
+//LCD_F_Write_command(0x02);
+//LCD_F_Write_command(0x28);
+//_delay_ms(1);
+//LCD_F_Write_String("saved");
+//}
+//
+//
+//
+//
+//arr[i]=key-'0';
+//LCD_F_Write_Data(key);
+//if (key == '+')
+//{
+	//FS=1;
+//}
+//if (key == '=')
+//{
+	//F=1;
+//}
+//if (FS == 1 && F == 1)
+//{
+	//for (j=i-2;j>=0;j--)
+	//{
+		//if (arr[j] != '+')
+		//{
+			//sum=sum + arr[j] ;
+		//}
+		//
+	//}
+	//LCD_F_Write_Number(sum);
+	//FS=0;
+	//F=0;
+	//i=0;
+//}
+//i++;
+
+////////////////////////////////////////
+
+//LCD_F_Write_String("    ");
+//x=ADC_F_Read();
+//LCD_F_Go_To(1,5);
+//LCD_F_Write_Number(ADC_F_Read());
